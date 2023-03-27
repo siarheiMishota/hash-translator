@@ -3,23 +3,16 @@ spring:
     name: hash-translator
   data:
     mongodb:
-#      host: mongo
-#      port: 27017
-#      database: hashtranslator
-      host: localhost
+      host: mongo
       port: 27017
       database: hashtranslator
 server:
   port: 8099
 
 api:
-#  auth-url: http://authorization-service:8091
-  auth-url: http://localhost:8091
+  auth-url: http://authorization-service:8091
   hash-translator:
     url: https://md5decrypt.net/en/Api/api.php
     hash-type: md5
     email: soloyoloswag1@mail.ru
     code: b65ed0e2650130c7
-#logging:
-#  level:
-#    root: trace
